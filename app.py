@@ -1,28 +1,15 @@
 # importing required libraries
 
-import pickle
 import warnings
 
-# from sklearn.externals import joblib
 import joblib
 import numpy as np
-import pandas as pd
 from flask import Flask, render_template, request
-from sklearn import metrics
 
 warnings.filterwarnings("ignore")
 from feature import FeatureExtraction
 
-# file = open("pickle/model.pkl", "rb")
-# gbc = pickle.load(file)
-
-# Save the model
-# joblib.dump(gbc, "model.pkl")
-
-# Load the model
 gbc = joblib.load("model.pkl")
-
-# file.close()
 
 
 app = Flask(__name__)
