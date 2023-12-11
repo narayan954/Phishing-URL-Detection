@@ -1,12 +1,10 @@
 # importing required libraries
 
 import pickle
+import warnings
 
 # from sklearn.externals import joblib
 import joblib
-
-import warnings
-
 import numpy as np
 import pandas as pd
 from flask import Flask, render_template, request
