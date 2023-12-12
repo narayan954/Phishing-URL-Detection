@@ -1,7 +1,8 @@
 # Phishing URL Detection
 
-![image](https://github.com/narayan954/Phishing-URL-Detection/assets/77617189/f4115e7b-d9d4-411d-b769-56992a623400)
-![image](https://user-images.githubusercontent.com/79131292/144742785-d183f50a-52d6-4296-a43a-90a1ee3502d8.png)
+![image](https://github.com/narayan954/Phishing-URL-Detection/assets/77617189/5b43d8e9-d501-4fc0-94cb-c04a4e45307e)
+![image](https://github.com/narayan954/Phishing-URL-Detection/assets/77617189/9bc3bf7a-b3df-4b8c-9132-25d6e6415a63)
+
 
 ## Table of Content
 
@@ -13,7 +14,7 @@
 
 ## Introduction
 
-The Internet has become an indispensable part of our life, However, It also has provided opportunities to anonymously perform malicious activities like Phishing. Phishers try to deceive their victims by social engineering or creating mockup websites to steal information such as account ID, username, password from individuals and organizations. Although many methods have been proposed to detect phishing websites, Phishers have evolved their methods to escape from these detection methods. One of the most successful methods for detecting these malicious activities is Machine Learning. This is because most Phishing attacks have some common characteristics which can be identified by machine learning methods. To see project click [here]("/").
+The Internet has become an indispensable part of our life, However, It also has provided opportunities to anonymously perform malicious activities like Phishing. Phishers try to deceive their victims by social engineering or creating mockup websites to steal information such as account ID, username, password from individuals and organizations. Although many methods have been proposed to detect phishing websites, Phishers have evolved their methods to escape from these detection methods. One of the most successful methods for detecting these malicious activities is Machine Learning. This is because most Phishing attacks have some common characteristics which can be identified by machine learning methods. To see project click [here](app.py).
 
 ## Installation
 
@@ -24,6 +25,7 @@ The Code is written in Python 3.6.10. If you don't have Python installed you can
 ```sh
 python -m venv env
 source env/bin/activate # Linux
+.\env\Scripts\activate # Windows
 ```
 
 ### Install the required modules
@@ -77,7 +79,7 @@ Accuracy of various model used for URL detection
 | --- | ---------------------------- | -------- | -------- | ------ | --------- |
 | 0   | Gradient Boosting Classifier | 0.974    | 0.977    | 0.994  | 0.986     |
 | 1   | CatBoost Classifier          | 0.972    | 0.975    | 0.994  | 0.989     |
-| 2   | XGBoost Classifier           | 0.969    | 0.973    | 0.993  | 0.984     |
+| 2   | XGBoost Classifier           | 0.969    | 0.972    | 0.995  | 0.988     |
 | 3   | Multi-layer Perceptron       | 0.969    | 0.973    | 0.995  | 0.981     |
 | 4   | Random Forest                | 0.967    | 0.971    | 0.993  | 0.990     |
 | 5   | Support Vector Machine       | 0.964    | 0.968    | 0.980  | 0.965     |
@@ -88,11 +90,12 @@ Accuracy of various model used for URL detection
 
 Feature importance for Phishing URL Detection
 <br><br>
-![image](https://user-images.githubusercontent.com/79131292/144603941-19044aae-7d7b-4e9a-88a8-6adfd8626f77.png)
+![image](https://github.com/narayan954/Phishing-URL-Detection/assets/77617189/e6bdc70d-6ef0-485b-a476-960ca6782061)
+
 
 ## Conclusion
 
 1. The final take away form this project is to explore various machine learning models, perform Exploratory Data Analysis on phishing dataset and understanding their features.
 2. Creating this notebook helped me to learn a lot about the features affecting the models to detect whether URL is safe or not, also I came to know how to tuned model and how they affect the model performance.
-3. The final conclusion on the Phishing dataset is that the some feature like "HTTTPS", "AnchorURL", "WebsiteTraffic" have more importance to classify URL is phishing URL or not.
+3. The final conclusion on the Phishing dataset is that the some feature like "HTTPS", "AnchorURL", "WebsiteTraffic" have more importance to classify URL is phishing URL or not.
 4. Gradient Boosting Classifier currectly classify URL upto 97.4% respective classes and hence reduces the chance of malicious attachments.
